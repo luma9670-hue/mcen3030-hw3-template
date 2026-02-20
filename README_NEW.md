@@ -7,7 +7,7 @@
 - "The Hershel-Bulkley Plus Model": $\hat{y}_P
 = \tau_y+K_1 x + K_2 x^n$ with four parameters to be fit: $\tau_y$, $K_1$, $K_2$, and $n$.
 
-##Files
+## Files
 - `fit_linear.m`  
   Solves the linear least-squares problem for `Y ≈ Z*A`.
 
@@ -31,7 +31,7 @@ Data:
 | H–B | 100.474 | — | 16.749 | 0.721 | — | — | 1.90e2 |
 | HB Plus | 104.936 | — | — | 2.412 | 10.253 | -0.0509 | 5.21e1 |
 
-When working 
+ A problem that I was continuing to run into was: "Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND = NaN." After doing some research, my parameters were too close to eachother, making the matrix singular. This would cause my graph to only show 1-2 fit models. After some altering with the parameters, I was able to get the models to show without warning. 
 
 ## Plot
 ![Semilogx plot of data and three fits](graph.png)
