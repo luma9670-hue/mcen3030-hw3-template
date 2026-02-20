@@ -32,8 +32,8 @@ Data:
 | HB Plus | 104.936 | — | — | 2.412 | 10.253 | -0.0509 | 5.21e1 |
 
 - A problem that I was continuing to run into was: "Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND = NaN." After 
-- doing some research, my parameters were too close to eachother, making the matrix singular. This would cause my graph to only show 1-2 fit models. After some
-- altering with the parameters, I was able to get the models to show without warning. 
+ doing some research, my parameters were too close to eachother, making the matrix singular. This would cause my graph to only show 1-2 fit models. After some
+  altering with the parameters, I was able to get the models to show without warning. 
 
 ## Plot
 ![Semilogx plot of data and three fits](graph.png)
