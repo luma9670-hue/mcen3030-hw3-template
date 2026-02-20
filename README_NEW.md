@@ -17,3 +17,4 @@
 | HB Plus | 104.936 | — | — | 2.412 | 10.253 | -0.0509 | 5.21e1 |
 
 ## Plot
+![Semilogx plot of data and three fits](graph.png)
