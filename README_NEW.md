@@ -28,7 +28,7 @@ Positive coefficients ($a_1$, $a_3$, $a_6$) increase resistance; negative ones (
 $$\hat{y} = -19.2367 + 0.1938 - 6.4194 + 4.2330 - 1.7657 - 4.5164 + 121.6676 = 94.16$$
 
 ## Plot 
-!(yacht.png) 
+![Plot of Yacht Resistance](yacht.png) 
 
 
 ## Models 
