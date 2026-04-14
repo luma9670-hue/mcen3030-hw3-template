@@ -1,5 +1,35 @@
 # Homework 3 Summary 
 
+# Yacht Hydrodynamics Linear Regression
+
+We fit a linear model to predict residuary resistance (wave/eddy drag) from six hull parameters:
+
+$$\hat{y} = a_0 + a_1 x_1 + \cdots + a_6 x_6$$
+
+## Fit Parameters
+
+| | Variable | Value |
+|---|---|---|
+| $a_0$ | Intercept | −19.2367 |
+| $a_1$ | Longitudinal center of buoyancy | +0.1938 |
+| $a_2$ | Prismatic coefficient | −6.4194 |
+| $a_3$ | Length-displacement ratio | +4.2330 |
+| $a_4$ | Beam-draught ratio | −1.7657 |
+| $a_5$ | Length-beam ratio | −4.5164 |
+| $a_6$ | Froude number | +121.6676 |
+
+Positive coefficients ($a_1$, $a_3$, $a_6$) increase resistance; negative ones ($a_2$, $a_4$, $a_5$) decrease it. The Froude number coefficient is by far the largest.
+
+## Results
+
+**R² = 0.6576.** The model captures the general trend but struggles at high resistance values, visible in the plot as points falling well below the ideal line. The relationship isn't truly linear, especially at higher speeds.
+
+**"Cube boat" (all inputs = 1):**
+$$\hat{y} = -19.2367 + 0.1938 - 6.4194 + 4.2330 - 1.7657 - 4.5164 + 121.6676 = 94.16$$
+
+## Plot 
+(yacht.png)
+
 
 ## Models 
 - "The Bingham Model": $\hat{y}_B = \tau_y + \eta x$, with two parameters to be fit: $\tau_y$ and $\eta$.
